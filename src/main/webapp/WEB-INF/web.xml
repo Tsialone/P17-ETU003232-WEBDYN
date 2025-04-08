@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="3.1" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd">
+<!--Route form prevision -->
+    <servlet>
+        <servlet-name>PrevisionFormServlet</servlet-name>
+        <servlet-class>controller.PrevisionFormServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>PrevisionFormServlet</servlet-name>
+        <url-pattern>/make_prevision</url-pattern>
+    </servlet-mapping>
+<!--Route form depense -->
+    <servlet>
+        <servlet-name>DepenseFormServlet</servlet-name>
+        <servlet-class>controller.DepenseFormServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>DepenseFormServlet</servlet-name>
+        <url-pattern>/depense_form</url-pattern>
+    </servlet-mapping>
+
+<!--Route voir etat -->
+    <servlet>
+        <servlet-name>EtatServlet</servlet-name>
+        <servlet-class>controller.EtatServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>EtatServlet</servlet-name>
+        <url-pattern>/voir_etat</url-pattern>
+    </servlet-mapping>
+
+<!--Route login verification -->
+    <servlet>
+        <servlet-name>LoginServlet</servlet-name>
+        <servlet-class>controller.LoginServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>LoginServlet</servlet-name>
+        <url-pattern>/login_verification</url-pattern>
+    </servlet-mapping>
+</web-app>

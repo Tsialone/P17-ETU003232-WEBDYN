@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form prevision</title>
+  </head>
+  <body>
+    <h1>Formulaire d'insertion de prevision</h1>
+    <form action="make_prevision" method="post">
+      <p>
+        <label for="libelle">Libelle:</label>
+        <textarea name="libelle" id="libelle"   placeholder="Ex: Sakafo" required></textarea>
+      </p>
+      <p>
+        <label for="montant">Montant:</label>
+        <input type="number"  name="montant" placeholder="Ex: 30000" required>
+      </p>
+      <p>
+        <input type="submit" />
+      </p>
+    </form>
+    <a href="depense_form">ajouter depense</a>
+    <a href="voir_etat">Voir Etat</a>
+  </body>
+</html>

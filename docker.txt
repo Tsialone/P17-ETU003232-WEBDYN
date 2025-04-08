@@ -1,0 +1,9 @@
+docker exec -it rog_sql mysql -u root -p"root" 
+
+ docker run -d \
+  --name rog_sql \
+  -e MYSQL_ROOT_PASSWORD="root" \
+  -e MYSQL_USER="rog" \
+  -e MYSQL_PASSWORD="strix" \
+  -p 3306:3306 \
+  mysql:5.7
