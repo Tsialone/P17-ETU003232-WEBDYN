@@ -10,8 +10,8 @@ public class UtilDb {
 
     public static Connection getCon()  throws Exception {
         String url = "jdbc:mysql://localhost:3306/db_s2_ETU003232";
-        String user = "root";
-        String password = "secret";
+        String user = "ETU003232";
+        String password = "hn1fZV7w";
         Connection conn = null;
 
         try {
